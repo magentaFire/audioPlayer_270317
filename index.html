@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Audio player</title>
+  </head>
+  <body>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+
+    <div>
+      <label for="points">volumen</label>
+      <input onchange="sliderVol()" type="range" name="points" id="points" value="50" min="0" max="100" >
+    </div>
+
+    <div>
+      <label for="progress">progres bar</label>
+      <input onchange="sliderProgress()" type="range" id="progress" value="0" min="0" max="" >
+    </div>
+
+    <button type="button" onclick="botonPlay()">Play</button>
+    <button type="button" onclick="botonPause()">Pause</button>
+    <button type="button" onclick="botonStop()">Stop</button>
+    <button type="button" onclick="botonBack()">Back</button>
+    <button type="button" onclick="botonNext()">Next</button>
+  </body>
+</html>
